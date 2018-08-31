@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F9F30688E2E9506D02FC38FB0AEE4C3 /* Pods-AnyMapTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8A96E834038D81D0749AB29B6AFDF /* Pods-AnyMapTests-dummy.m */; };
+		4066E73C86CFF63A24DC38ABB60BDF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		43DB81EE11BC31CEECD07DE2423E8171 /* Pods-AnyMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 692525AB0EE5A4750955E14B1795D6E7 /* Pods-AnyMap-dummy.m */; };
+		464D7D0F0E3D7991C51677DB813E53B9 /* Pods-AnyMapUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2983A76BD49DE9E445C9602973D4190 /* Pods-AnyMapUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55E7F385915C872B19381FEF6614F896 /* Pods-AnyMapUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58E852F7C85DAAA2C2B105FB4C7BD5 /* Pods-AnyMapUITests-dummy.m */; };
+		66754AF47DF0BA265AEE394BA39C3FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9FE18591C42163B9977AC7B1E8B5DF23 /* Pods-AnyMapTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D364B079973F6DDF3EEAF112AB8F3C3B /* Pods-AnyMapTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0EBD33C026560AAA8C4A216AA4BC8F9 /* Pods-AnyMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F2782FA441C0796B1D1410602910E8 /* Pods-AnyMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1874B057CAAF8669DA88FBBBA483694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C008A8FF6EAA989AD3F04C5D79E6E114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD3A74C3E048FF520246B3DE1750CDE1;
+			remoteInfo = "Pods-AnyMap";
+		};
+		F11D5CA5E066D2E2EB937EB09F14C111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD3A74C3E048FF520246B3DE1750CDE1;
+			remoteInfo = "Pods-AnyMap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A8B4B5E7CA162E175328BCFBDFCE4FD /* Pods-AnyMapUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnyMapUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0D03EB87EC4C376ED0E9B091D38B2592 /* Pods-AnyMapUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnyMapUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D7FB6346E1A3455EAA8C27F23292BE7 /* Pods-AnyMapUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnyMapUITests.modulemap"; sourceTree = "<group>"; };
+		18F7F01515D95BEE7B5135DE8CC81730 /* Pods-AnyMap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnyMap-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20F2782FA441C0796B1D1410602910E8 /* Pods-AnyMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnyMap-umbrella.h"; sourceTree = "<group>"; };
+		2109B2AB7DDA79CFC4D4A4D9EF4F55C6 /* Pods-AnyMapTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnyMapTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		221DE3146150FC7BDE47C9AB5C638F63 /* Pods-AnyMapUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnyMapUITests-resources.sh"; sourceTree = "<group>"; };
+		2A18EBE7396DC939348CF701D7151DC0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320DC2F729D15FA7F592F6E20A780115 /* Pods_AnyMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AnyMapTests.framework; path = "Pods-AnyMapTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1D00B12379A329B83F510E33F70FEE /* Pods_AnyMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AnyMap.framework; path = "Pods-AnyMap.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4586F1768EFD5DBFF296667F5050C0C5 /* Pods-AnyMap-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnyMap-frameworks.sh"; sourceTree = "<group>"; };
+		4ACB17F89AC9C64C74DD4220C3BDDD27 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		52082290EF201E152EBC95EB7A0CF1D6 /* Pods-AnyMapTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnyMapTests-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66D4C847EE899F2D8CCEACD44D22B996 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		68171BB6151AB7FFF5E7A485FA028F54 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		68E7178E469D18FFB23F815CD78809B9 /* Pods-AnyMapTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnyMapTests-frameworks.sh"; sourceTree = "<group>"; };
+		692525AB0EE5A4750955E14B1795D6E7 /* Pods-AnyMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnyMap-dummy.m"; sourceTree = "<group>"; };
+		6B300B7B2BC1C1CAC5BCF113DBBFAACE /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		6EF74B13C9949E4216DDE9D32702125E /* Pods-AnyMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnyMapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		73EE3496070B0A14686986C7E3D88627 /* Pods-AnyMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnyMap.modulemap"; sourceTree = "<group>"; };
+		74F8A96E834038D81D0749AB29B6AFDF /* Pods-AnyMapTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnyMapTests-dummy.m"; sourceTree = "<group>"; };
+		83974798340211C2368612114DCA4A3F /* Pods-AnyMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnyMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84A000DB18FECD0B9254CA55800CD9F3 /* Pods-AnyMapTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnyMapTests.modulemap"; sourceTree = "<group>"; };
+		8731053FAA54233685A13E0A08C19E0E /* Pods-AnyMap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnyMap-resources.sh"; sourceTree = "<group>"; };
+		8F310025697F0E680354264EB7E5D09F /* Pods-AnyMapUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnyMapUITests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		992A57F362E879351FC150DAE59F3066 /* Pods-AnyMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnyMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6BC8C65DD7836E4A54DC06656B1703A /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		A9F1F6D7E821AA18BA2CA9BEDF0096FA /* Pods-AnyMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnyMap.release.xcconfig"; sourceTree = "<group>"; };
+		AB8BEF6E7B6077926966B9A534E8511F /* Pods-AnyMapTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnyMapTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AEB372826A120C79A20DF11C64EE078E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2983A76BD49DE9E445C9602973D4190 /* Pods-AnyMapUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnyMapUITests-umbrella.h"; sourceTree = "<group>"; };
+		B48B1D480BF4D26D3815453E645CD835 /* Pods_AnyMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AnyMapUITests.framework; path = "Pods-AnyMapUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AB2DC841055B8D4A9EC3937669D975 /* Pods-AnyMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnyMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1BA7FF546F2B69A1D6AB1B0C5CB6EC0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA42A7D7F183EC6D6E74BAB6618D5034 /* Pods-AnyMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnyMap.debug.xcconfig"; sourceTree = "<group>"; };
+		D364B079973F6DDF3EEAF112AB8F3C3B /* Pods-AnyMapTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnyMapTests-umbrella.h"; sourceTree = "<group>"; };
+		DC58E852F7C85DAAA2C2B105FB4C7BD5 /* Pods-AnyMapUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnyMapUITests-dummy.m"; sourceTree = "<group>"; };
+		DD74A9D6FE8C22F7A4B956480B908932 /* Pods-AnyMap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnyMap-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A789D47F45FA8EFD920A7FFB4FED332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66754AF47DF0BA265AEE394BA39C3FB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C69B5AAB4E1D2A04FAF84A1D9DBD94B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1874B057CAAF8669DA88FBBBA483694 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795418668282C1EC5088E570A4363108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4066E73C86CFF63A24DC38ABB60BDF3F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040E7BFFE957FE7DBD70D0118047AAD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB17F89AC9C64C74DD4220C3BDDD27 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05499F0BBF02FC72118D743F15B900CA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D031C96911B1D1C348722DE5983AD /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		1198624AB88D1EF8DA272051BEE1BD8A /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				C48545CCADA6FDAF17DAF5BCD0E70A68 /* Frameworks */,
+				13D1B142D72D835C51E398DF9E0D20B8 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		13D1B142D72D835C51E398DF9E0D20B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6BC8C65DD7836E4A54DC06656B1703A /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3D9356B10F0400896A768CF3CCBD39A9 /* Pods-AnyMap */ = {
+			isa = PBXGroup;
+			children = (
+				AEB372826A120C79A20DF11C64EE078E /* Info.plist */,
+				73EE3496070B0A14686986C7E3D88627 /* Pods-AnyMap.modulemap */,
+				18F7F01515D95BEE7B5135DE8CC81730 /* Pods-AnyMap-acknowledgements.markdown */,
+				DD74A9D6FE8C22F7A4B956480B908932 /* Pods-AnyMap-acknowledgements.plist */,
+				692525AB0EE5A4750955E14B1795D6E7 /* Pods-AnyMap-dummy.m */,
+				4586F1768EFD5DBFF296667F5050C0C5 /* Pods-AnyMap-frameworks.sh */,
+				8731053FAA54233685A13E0A08C19E0E /* Pods-AnyMap-resources.sh */,
+				20F2782FA441C0796B1D1410602910E8 /* Pods-AnyMap-umbrella.h */,
+				CA42A7D7F183EC6D6E74BAB6618D5034 /* Pods-AnyMap.debug.xcconfig */,
+				A9F1F6D7E821AA18BA2CA9BEDF0096FA /* Pods-AnyMap.release.xcconfig */,
+			);
+			name = "Pods-AnyMap";
+			path = "Target Support Files/Pods-AnyMap";
+			sourceTree = "<group>";
+		};
+		6B2B6D2A050982FEAD8A677498690406 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F89E854EFC454264497D7B7678C54E2C /* GoogleMaps */,
+				90EDFEA1B8E689F2D905801C186E8B2B /* Mapbox-iOS-SDK */,
+				B5B10542E60FF9EFB5FBC6F68BDBAEF1 /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77E18E90D9599F49735122983DD89384 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D9356B10F0400896A768CF3CCBD39A9 /* Pods-AnyMap */,
+				C880797987949578926A735A508DBC37 /* Pods-AnyMapTests */,
+				C9BD7CCD9315E98313B92F0FD4090205 /* Pods-AnyMapUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6B2B6D2A050982FEAD8A677498690406 /* Pods */,
+				D6F24C9FD944A809B8ECF37827B162DF /* Products */,
+				77E18E90D9599F49735122983DD89384 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		90EDFEA1B8E689F2D905801C186E8B2B /* Mapbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				040E7BFFE957FE7DBD70D0118047AAD5 /* Frameworks */,
+			);
+			name = "Mapbox-iOS-SDK";
+			path = "Mapbox-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		B5B10542E60FF9EFB5FBC6F68BDBAEF1 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C48545CCADA6FDAF17DAF5BCD0E70A68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68171BB6151AB7FFF5E7A485FA028F54 /* GoogleMaps.framework */,
+				6B300B7B2BC1C1CAC5BCF113DBBFAACE /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C880797987949578926A735A508DBC37 /* Pods-AnyMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1BA7FF546F2B69A1D6AB1B0C5CB6EC0 /* Info.plist */,
+				84A000DB18FECD0B9254CA55800CD9F3 /* Pods-AnyMapTests.modulemap */,
+				2109B2AB7DDA79CFC4D4A4D9EF4F55C6 /* Pods-AnyMapTests-acknowledgements.markdown */,
+				AB8BEF6E7B6077926966B9A534E8511F /* Pods-AnyMapTests-acknowledgements.plist */,
+				74F8A96E834038D81D0749AB29B6AFDF /* Pods-AnyMapTests-dummy.m */,
+				68E7178E469D18FFB23F815CD78809B9 /* Pods-AnyMapTests-frameworks.sh */,
+				52082290EF201E152EBC95EB7A0CF1D6 /* Pods-AnyMapTests-resources.sh */,
+				D364B079973F6DDF3EEAF112AB8F3C3B /* Pods-AnyMapTests-umbrella.h */,
+				992A57F362E879351FC150DAE59F3066 /* Pods-AnyMapTests.debug.xcconfig */,
+				B5AB2DC841055B8D4A9EC3937669D975 /* Pods-AnyMapTests.release.xcconfig */,
+			);
+			name = "Pods-AnyMapTests";
+			path = "Target Support Files/Pods-AnyMapTests";
+			sourceTree = "<group>";
+		};
+		C9BD7CCD9315E98313B92F0FD4090205 /* Pods-AnyMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A18EBE7396DC939348CF701D7151DC0 /* Info.plist */,
+				0D7FB6346E1A3455EAA8C27F23292BE7 /* Pods-AnyMapUITests.modulemap */,
+				0D03EB87EC4C376ED0E9B091D38B2592 /* Pods-AnyMapUITests-acknowledgements.markdown */,
+				0A8B4B5E7CA162E175328BCFBDFCE4FD /* Pods-AnyMapUITests-acknowledgements.plist */,
+				DC58E852F7C85DAAA2C2B105FB4C7BD5 /* Pods-AnyMapUITests-dummy.m */,
+				8F310025697F0E680354264EB7E5D09F /* Pods-AnyMapUITests-frameworks.sh */,
+				221DE3146150FC7BDE47C9AB5C638F63 /* Pods-AnyMapUITests-resources.sh */,
+				B2983A76BD49DE9E445C9602973D4190 /* Pods-AnyMapUITests-umbrella.h */,
+				83974798340211C2368612114DCA4A3F /* Pods-AnyMapUITests.debug.xcconfig */,
+				6EF74B13C9949E4216DDE9D32702125E /* Pods-AnyMapUITests.release.xcconfig */,
+			);
+			name = "Pods-AnyMapUITests";
+			path = "Target Support Files/Pods-AnyMapUITests";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D6F24C9FD944A809B8ECF37827B162DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D00B12379A329B83F510E33F70FEE /* Pods_AnyMap.framework */,
+				320DC2F729D15FA7F592F6E20A780115 /* Pods_AnyMapTests.framework */,
+				B48B1D480BF4D26D3815453E645CD835 /* Pods_AnyMapUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB5D031C96911B1D1C348722DE5983AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66D4C847EE899F2D8CCEACD44D22B996 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F89E854EFC454264497D7B7678C54E2C /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				05499F0BBF02FC72118D743F15B900CA /* Base */,
+				1198624AB88D1EF8DA272051BEE1BD8A /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F0C81B3CE8E7EA5A057C3A7EBB796D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE18591C42163B9977AC7B1E8B5DF23 /* Pods-AnyMapTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916E2F9EC5613638A27CDBC4569CCE3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0EBD33C026560AAA8C4A216AA4BC8F9 /* Pods-AnyMap-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E40E66AAA5B1018F6C9B82078EDE04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464D7D0F0E3D7991C51677DB813E53B9 /* Pods-AnyMapUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9620CA6FF93A3EBB2ACAFDF6470DEEF8 /* Pods-AnyMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF3617EC727F5407A5C62542BDFE691 /* Build configuration list for PBXNativeTarget "Pods-AnyMapUITests" */;
+			buildPhases = (
+				C3124BFABB6E5BBCC62D31A299A8B9C0 /* Sources */,
+				5C69B5AAB4E1D2A04FAF84A1D9DBD94B /* Frameworks */,
+				A1E40E66AAA5B1018F6C9B82078EDE04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D638449946A131A4C23171F6729CB7D /* PBXTargetDependency */,
+			);
+			name = "Pods-AnyMapUITests";
+			productName = "Pods-AnyMapUITests";
+			productReference = B48B1D480BF4D26D3815453E645CD835 /* Pods_AnyMapUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC837BC48B08D9077BA9A9D60116FE35 /* Pods-AnyMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40FFBA6510F9F8CA5FA6B279FE1886A8 /* Build configuration list for PBXNativeTarget "Pods-AnyMapTests" */;
+			buildPhases = (
+				44C083F711C02B4471D91AFCFCE3268C /* Sources */,
+				0A789D47F45FA8EFD920A7FFB4FED332 /* Frameworks */,
+				7F0C81B3CE8E7EA5A057C3A7EBB796D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D060723D56C3467429FF91636D4E77B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-AnyMapTests";
+			productName = "Pods-AnyMapTests";
+			productReference = 320DC2F729D15FA7F592F6E20A780115 /* Pods_AnyMapTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD3A74C3E048FF520246B3DE1750CDE1 /* Pods-AnyMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7F99A8E3F47CCCC5B435E8B830348E /* Build configuration list for PBXNativeTarget "Pods-AnyMap" */;
+			buildPhases = (
+				EC841BF1A8899E93D5FA78DBF9AEDDE5 /* Sources */,
+				795418668282C1EC5088E570A4363108 /* Frameworks */,
+				916E2F9EC5613638A27CDBC4569CCE3F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AnyMap";
+			productName = "Pods-AnyMap";
+			productReference = 3C1D00B12379A329B83F510E33F70FEE /* Pods_AnyMap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D6F24C9FD944A809B8ECF37827B162DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD3A74C3E048FF520246B3DE1750CDE1 /* Pods-AnyMap */,
+				AC837BC48B08D9077BA9A9D60116FE35 /* Pods-AnyMapTests */,
+				9620CA6FF93A3EBB2ACAFDF6470DEEF8 /* Pods-AnyMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44C083F711C02B4471D91AFCFCE3268C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9F30688E2E9506D02FC38FB0AEE4C3 /* Pods-AnyMapTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3124BFABB6E5BBCC62D31A299A8B9C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E7F385915C872B19381FEF6614F896 /* Pods-AnyMapUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC841BF1A8899E93D5FA78DBF9AEDDE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DB81EE11BC31CEECD07DE2423E8171 /* Pods-AnyMap-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D638449946A131A4C23171F6729CB7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AnyMap";
+			target = DD3A74C3E048FF520246B3DE1750CDE1 /* Pods-AnyMap */;
+			targetProxy = C008A8FF6EAA989AD3F04C5D79E6E114 /* PBXContainerItemProxy */;
+		};
+		D060723D56C3467429FF91636D4E77B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AnyMap";
+			target = DD3A74C3E048FF520246B3DE1750CDE1 /* Pods-AnyMap */;
+			targetProxy = F11D5CA5E066D2E2EB937EB09F14C111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F2C7068A79D34BF26E205E66EEF2865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AB2DC841055B8D4A9EC3937669D975 /* Pods-AnyMapTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnyMapTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnyMapTests/Pods-AnyMapTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		38DE24252F0BDC518DE20164F61ECF0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83974798340211C2368612114DCA4A3F /* Pods-AnyMapUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnyMapUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnyMapUITests/Pods-AnyMapUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		837B7E26BEBA0D0F482A79E8BD65BBA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA42A7D7F183EC6D6E74BAB6618D5034 /* Pods-AnyMap.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnyMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnyMap/Pods-AnyMap.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B54CBC032ECE00C96FC56C9F3B9D863E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F1F6D7E821AA18BA2CA9BEDF0096FA /* Pods-AnyMap.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnyMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnyMap/Pods-AnyMap.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF144960DAD93BA00C84CD9E6C181DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 992A57F362E879351FC150DAE59F3066 /* Pods-AnyMapTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnyMapTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnyMapTests/Pods-AnyMapTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAD511BADF771A6767752F35E2C01FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF74B13C9949E4216DDE9D32702125E /* Pods-AnyMapUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnyMapUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnyMapUITests/Pods-AnyMapUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40FFBA6510F9F8CA5FA6B279FE1886A8 /* Build configuration list for PBXNativeTarget "Pods-AnyMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF144960DAD93BA00C84CD9E6C181DFB /* Debug */,
+				0F2C7068A79D34BF26E205E66EEF2865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7F99A8E3F47CCCC5B435E8B830348E /* Build configuration list for PBXNativeTarget "Pods-AnyMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837B7E26BEBA0D0F482A79E8BD65BBA5 /* Debug */,
+				B54CBC032ECE00C96FC56C9F3B9D863E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF3617EC727F5407A5C62542BDFE691 /* Build configuration list for PBXNativeTarget "Pods-AnyMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38DE24252F0BDC518DE20164F61ECF0F /* Debug */,
+				DAD511BADF771A6767752F35E2C01FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,28 @@
+PODS:
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - Mapbox-iOS-SDK (4.3.0)
+  - SwiftLint (0.27.0)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - Mapbox-iOS-SDK
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleMaps
+    - Mapbox-iOS-SDK
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  Mapbox-iOS-SDK: 7d8d510088ba7900d11aa3ceb98f563b040efca1
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+
+PODFILE CHECKSUM: 87897ff3692a39bfc713e4013686dae391bf3603
+
+COCOAPODS: 1.5.3
