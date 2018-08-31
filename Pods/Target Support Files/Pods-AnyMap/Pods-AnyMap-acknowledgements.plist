@@ -24,6 +24,16 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>MIT LICENSE Found in the repo</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>Keys</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>mapbox-gl-native copyright (c) 2014-2018 Mapbox.
 
 Redistribution and use in source and binary forms, with or without

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Keys
 import GoogleMaps
 
 @UIApplicationMain
@@ -16,8 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
+    let keys = AnyMapKeys()
+    
     // Google Maps setup
-    GMSServices.provideAPIKey("AIzaSyA3s6SIoy5-rcewVvR75juxx2LOH8J62_k")
+    GMSServices.provideAPIKey(keys.gmsServicesAPIKey)
     
     return true
   }

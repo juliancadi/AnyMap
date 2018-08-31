@@ -5,6 +5,10 @@ This application makes use of the following third party libraries:
 
 Copyright 2018 Google
 
+## Keys
+
+MIT LICENSE Found in the repo
+
 ## Mapbox-iOS-SDK
 
 mapbox-gl-native copyright (c) 2014-2018 Mapbox.
