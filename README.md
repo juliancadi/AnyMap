@@ -30,16 +30,18 @@ Little example, *still in development*, using different map/satellite imagery SD
 
 ## Architecture 👷
 
-- Mainly Model-View-ViewModel (MVVM) mixed with Composite Pattern.
+- Model-View-ViewModel (MVVM) mixed with Composite Pattern.
 - RxSwift as Observer mechanism.
 - OS Compatibility: iOS 9+
 - Xcode Version: 9.4.1
 - Swift Version: 4.1
 
-## Use 👨‍🔧
+## Usage 👨‍🔧
 
-1. 'pod install'
-2. Open AnyMap.xcworkspace
-3. Run tests (Cmd + U)
-4. Run project (Cmd + R)
-5. Have fun!
+1. Install [cocoapods-keys](https://github.com/orta/cocoapods-keys)
+2. Provide an [API key](https://developers.google.com/maps/documentation/embed/get-api-key) for Google Maps iOS SDK
+3. Provide an [access token](https://www.mapbox.com/account/access-tokens/) for Mapbox iOS SDK into *mapboxToken* file
+4. Open AnyMap.xcworkspace
+5. Run tests (Cmd + U)
+6. Run project (Cmd + R)
+7. Have fun!
