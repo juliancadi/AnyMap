@@ -302,6 +302,7 @@
 				0071A6442137F7EF0018A10D /* Resources */,
 				44B323CED781234334471DC5 /* [CP] Embed Pods Frameworks */,
 				FDADC7B94EB582753EF410DE /* [CP] Copy Pods Resources */,
+				00AC023621399E8A000EBE4F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -424,6 +425,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00AC023621399E8A000EBE4F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/AnyMap/insert-mapbox-token.sh";
+		};
 		00E654322137F92000DC55C5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

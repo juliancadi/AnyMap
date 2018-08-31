@@ -43,14 +43,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoianVsaWFuY2FkaSIsImEiOiJjamxncDZmd28xYTIxM3ZvOWt0Z3VzMHVwIn0.li0PLUWAxG3vcnuj0FqAzw</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Shows your location on the map and helps improve AnyMap.</string>
-  <key>LSApplicationQueriesSchemes</key>
-  <array>
-    <string>googlechromes</string>
-    <string>comgooglemaps</string>
-  </array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+	</array>
 </dict>
 </plist>
