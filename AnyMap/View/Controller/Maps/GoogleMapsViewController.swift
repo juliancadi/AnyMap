@@ -7,13 +7,35 @@
 //
 
 import GoogleMaps
+import RxSwift
+import RxCocoa
 
-class GoogleMapsViewController: MapViewController {
+class GoogleMapsViewController: UIViewController {
+
+  private lazy var mapView = GMSMapView()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view = GMSMapView()
+    setupMapView()
   }
 
+}
+
+private extension GoogleMapsViewController {
+  
+  func setupMapView() {
+    mapView = GMSMapView()
+    mapView.isMyLocationEnabled = true
+    view = mapView
+  }
+  
+}
+
+extension GoogleMapsViewController: Mapable {
+  
+  var region: Binder<CoordinateRegion> {
+    return mapView.rx.regionBinder
+  }
+  
 }

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
+import RxCocoa
+import RxSwift
 
 class MapDisplayViewController: UIViewController {
   
@@ -16,10 +19,13 @@ class MapDisplayViewController: UIViewController {
   
   // MARK: - Initialization
   
-  private let mapViewController: MapViewController
+  internal let mapable: Mapable
+  internal let viewModel = LocationViewModel()
+  internal let locationManager = CLLocationManager()
+  internal let disposeBag = DisposeBag()
   
-  init(controller: MapViewController) {
-    self.mapViewController = controller
+  init(mapable: Mapable) {
+    self.mapable = mapable
     super.init(nibName: "MapDisplayViewController", bundle: nil)
   }
   
@@ -32,7 +38,10 @@ class MapDisplayViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    add(viewController: mapViewController, to: mapDisplayView)
+    add(viewController: mapable as! UIViewController, to: mapDisplayView)
+    
+    setUpLocationManager()
+    bindViewModel()
   }
 
 }

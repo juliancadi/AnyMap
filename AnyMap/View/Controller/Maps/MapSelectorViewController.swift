@@ -46,11 +46,11 @@ private extension MapSelectorViewController {
   func mapDisplayViewController(for type: MapType) -> MapDisplayViewController {
     switch type {
     case .mapbox:
-      return MapDisplayViewController(controller: MapboxMapViewController())
+      return MapDisplayViewController(mapable: MapboxMapViewController())
     case .mapKit:
-      return MapDisplayViewController(controller: MapKitViewController())
+      return MapDisplayViewController(mapable: MapKitViewController())
     case .googleMaps:
-      return MapDisplayViewController(controller: GoogleMapsViewController())
+      return MapDisplayViewController(mapable: GoogleMapsViewController())
     }
   }
   

@@ -7,13 +7,35 @@
 //
 
 import MapKit
+import RxSwift
+import RxCocoa
 
-class MapKitViewController: MapViewController {
+class MapKitViewController: UIViewController {
+  
+  private lazy var mapView = MKMapView()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view = MKMapView()
+    setupMapView()
   }
+  
+}
 
+private extension MapKitViewController {
+  
+  func setupMapView() {
+    mapView = MKMapView()
+    mapView.showsUserLocation = true
+    view = mapView
+  }
+  
+}
+
+extension MapKitViewController: Mapable {
+  
+  var region: Binder<CoordinateRegion> {
+    return mapView.rx.regionBinder
+  }
+  
 }

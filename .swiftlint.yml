@@ -2,6 +2,7 @@ disabled_rules: # rule identifiers to exclude from running
  - trailing_whitespace
  - force_cast
  - todo
+ - large_tuple
 excluded: # paths to ignore during linting. Takes precedence over `included`.
  - Carthage
  - Pods
