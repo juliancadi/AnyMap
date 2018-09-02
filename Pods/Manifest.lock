@@ -1,8 +1,8 @@
 PODS:
-  - GoogleMaps (2.7.0):
-    - GoogleMaps/Maps (= 2.7.0)
-  - GoogleMaps/Base (2.7.0)
-  - GoogleMaps/Maps (2.7.0):
+  - GoogleMaps (2.5.0):
+    - GoogleMaps/Maps (= 2.5.0)
+  - GoogleMaps/Base (2.5.0)
+  - GoogleMaps/Maps (2.5.0):
     - GoogleMaps/Base
   - Keys (1.0.1)
   - Mapbox-iOS-SDK (4.3.0)
@@ -13,6 +13,13 @@ PODS:
   - RxCoreLocation/Core (1.3.0):
     - RxCocoa (~> 4.2.0)
     - RxSwift (~> 4.2.0)
+  - RxGoogleMaps (3.0):
+    - GoogleMaps (~> 2.5.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxMKMapView (4.2.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
   - RxSwiftExt (3.3.0):
     - RxSwiftExt/Core (= 3.3.0)
@@ -21,11 +28,13 @@ PODS:
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
-  - GoogleMaps
+  - GoogleMaps (= 2.5.0)
   - Keys (from `Pods/CocoaPodsKeys`)
   - Mapbox-iOS-SDK
   - RxCocoa
   - RxCoreLocation
+  - RxGoogleMaps
+  - RxMKMapView
   - RxSwift
   - RxSwiftExt
   - SwiftLint
@@ -36,6 +45,8 @@ SPEC REPOS:
     - Mapbox-iOS-SDK
     - RxCocoa
     - RxCoreLocation
+    - RxGoogleMaps
+    - RxMKMapView
     - RxSwift
     - RxSwiftExt
     - SwiftLint
@@ -45,15 +56,17 @@ EXTERNAL SOURCES:
     :path: Pods/CocoaPodsKeys
 
 SPEC CHECKSUMS:
-  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
   Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
   Mapbox-iOS-SDK: 7d8d510088ba7900d11aa3ceb98f563b040efca1
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxCoreLocation: f65296c805cf7782cb219f6947289d6eb3076d32
+  RxGoogleMaps: 32e37d5e8304e656d3dbee0e8247700f3f736c47
+  RxMKMapView: a4af352590a47c876361c6de4f71634ba321d810
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   RxSwiftExt: 81afb48ab0602f503147417baeb3989d64c7687d
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 5f0fe5641b443fefd2a55ec8db1ae78e87185ff2
+PODFILE CHECKSUM: c90582999975d8f97a118f93fd93151f75a6683c
 
 COCOAPODS: 1.5.3

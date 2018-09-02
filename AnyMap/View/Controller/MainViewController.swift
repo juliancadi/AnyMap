@@ -24,9 +24,11 @@ private extension MainViewController {
     configureTabBar()
     let mapsVC = MapSelectorViewController()
     mapsVC.tabBarItem = UITabBarItem(title: "Maps", image: #imageLiteral(resourceName: "MapsBarButton"), selectedImage: #imageLiteral(resourceName: "MapsBarButton"))
-    let activityVC = ActivityViewController()
-    activityVC.tabBarItem = UITabBarItem(title: "Activity", image: #imageLiteral(resourceName: "ActivityBarButton"), selectedImage: #imageLiteral(resourceName: "ActivityBarButton"))
-    viewControllers = [mapsVC, activityVC]
+    // TODO: Activity table
+    /*let activityVC = ActivityViewController()
+    activityVC.tabBarItem = UITabBarItem(title: "Activity", image: #imageLiteral(resourceName: "ActivityBarButton"), selectedImage: #imageLiteral(resourceName: "ActivityBarButton"))*/
+    //viewControllers = [mapsVC, activityVC]
+    viewControllers = [mapsVC]
   }
   
 }

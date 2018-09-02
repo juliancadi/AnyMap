@@ -19,4 +19,9 @@ extension Reactive where Base: MKMapView {
     }
   }
   
+  var regionDidChange: Observable<CoordinateRegion> {
+    return regionDidChangeAnimated
+      .map { [base] _ in base.coordinateRegion }
+  }
+  
 }

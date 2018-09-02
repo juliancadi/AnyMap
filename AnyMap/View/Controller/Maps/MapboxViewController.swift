@@ -27,6 +27,8 @@ private extension MapboxMapViewController {
   func setupMapView() {
     mapView.styleURL = URL(string: "mapbox://styles/mapbox/streets-v10")
     mapView.showsUserLocation = true
+    mapView.isRotateEnabled = false
+    mapView.isPitchEnabled = false
     view = mapView
   }
   
@@ -36,6 +38,10 @@ extension MapboxMapViewController: Mapable {
   
   var region: Binder<CoordinateRegion> {
     return mapView.rx.regionBinder
+  }
+  
+  var regionDidChange: Observable<CoordinateRegion> {
+    return mapView.rx.regionDidChange
   }
   
 }

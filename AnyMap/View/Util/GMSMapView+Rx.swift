@@ -9,6 +9,7 @@
 import GoogleMaps
 import RxSwift
 import RxCocoa
+import RxGoogleMaps
 
 extension Reactive where Base: GMSMapView {
   
@@ -19,4 +20,9 @@ extension Reactive where Base: GMSMapView {
     }
   }
 
+  var regionDidChange: Observable<CoordinateRegion> {
+    return didChange
+      .map { [base] _ in base.coordinateRegion }
+  }
+  
 }

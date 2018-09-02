@@ -18,21 +18,29 @@ class MapSelectorViewController: UIViewController {
   // MARK: - State
   
   private lazy var stateViewController = ContentStateViewController()
+  private var mapDisplayViewController: MapDisplayViewController!
   
   // MARK: - UIViewController
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    // Rounded corners
+    mapTypeSegmentedControl.layer.cornerRadius = 4.0
+    
     add(viewController: stateViewController, to: mapContainer)
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    render(viewController: mapDisplayViewController(for: MapType(rawValue: mapTypeSegmentedControl.selectedSegmentIndex)!))
+    let intialMapable = mapable(for: MapType(rawValue: mapTypeSegmentedControl.selectedSegmentIndex)!)
+    mapDisplayViewController = MapDisplayViewController(mapable: intialMapable)
+    render(viewController: mapDisplayViewController)
   }
   
   @IBAction func segmentedValueChanged(_ sender: UISegmentedControl) {
-    render(viewController: mapDisplayViewController(for: MapType(rawValue: sender.selectedSegmentIndex)!))
+    let newMapable = mapable(for: MapType(rawValue: sender.selectedSegmentIndex)!)
+    mapDisplayViewController.transition(to: newMapable)
   }
   
 }
@@ -43,14 +51,14 @@ private extension MapSelectorViewController {
     stateViewController.transition(to: .render(viewController))
   }
   
-  func mapDisplayViewController(for type: MapType) -> MapDisplayViewController {
+  func mapable(for type: MapType) -> Mapable {
     switch type {
     case .mapbox:
-      return MapDisplayViewController(mapable: MapboxMapViewController())
+      return MapboxMapViewController()
     case .mapKit:
-      return MapDisplayViewController(mapable: MapKitViewController())
+      return MapKitViewController()
     case .googleMaps:
-      return MapDisplayViewController(mapable: GoogleMapsViewController())
+      return GoogleMapsViewController()
     }
   }
   

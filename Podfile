@@ -14,13 +14,15 @@ def swift
   
   # Maps
   pod 'Mapbox-iOS-SDK' # Mapbox
-  pod 'GoogleMaps' # GoogleMaps
+  pod 'GoogleMaps', '2.5.0' # GoogleMaps
   
   # Reactive Swift
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxSwiftExt'
   pod 'RxCoreLocation'
+  pod 'RxMKMapView'
+  pod 'RxGoogleMaps'
   
 end
 

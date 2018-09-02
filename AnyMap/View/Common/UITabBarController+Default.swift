@@ -13,7 +13,7 @@ extension UITabBarController {
   func configureTabBar() {
     tabBar.isTranslucent = false
     tabBar.barTintColor = .greenRYB
-    tabBar.tintColor = .isabelline
+    tabBar.tintColor = .white
     if #available(iOS 10.0, *) {
       tabBar.unselectedItemTintColor = .oliveDrab
     } else {

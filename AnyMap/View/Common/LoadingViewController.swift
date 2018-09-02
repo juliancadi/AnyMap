@@ -14,7 +14,7 @@ class LoadingViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = .isabelline
+    view.backgroundColor = .white
     activityIndicator.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(activityIndicator)
     

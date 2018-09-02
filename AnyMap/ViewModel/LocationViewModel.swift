@@ -17,60 +17,47 @@ private var defaultZoom: Double = 17.0
 
 struct LocationViewModel {
   
+  let input: Input
+  var output: Output!
+  
+  init(input: Input) {
+    self.input = input
+    self.output = transform()
+  }
+  
+  private let disposeBag = DisposeBag()
+  let lastKnownLocation = BehaviorRelay<CoordinateRegion>(value: CoordinateRegion(center: defaultLocation.coordinate,
+                                                                                  zoom: defaultZoom))
+  
 }
 
 extension LocationViewModel: ViewModelType {
   
   struct Input {
-    let changeLocationTrigger: Observable<CLLocation?>
-    let changeAuthorizationTrigger: Driver<CLAuthorizationEvent>
+    let changeLocationTrigger: Driver<CLLocation>
     let stopUpdateLocationTrigger: Driver<CLLocationsEvent>
   }
   
   struct Output {
-    let loading: Driver<Bool>
-    let locationChanged: Driver<CoordinateRegion>
     let updateLocationStopped: Driver<Void>
-    let errors: Driver<Error>
   }
   
-  func transform(input: Input) -> Output {
-    let activityIndicator = ActivityIndicator()
-    let errorTracker = ErrorTracker()
-    let loading = activityIndicator.asDriver()
-    let errors = errorTracker.asDriver()
+  internal func transform() -> Output {
     
     let locationMapping: (CLLocation) -> CoordinateRegion = {
       CoordinateRegion(center: $0.coordinate, zoom: defaultZoom)
     }
     
-    let userLocationChanged = input.changeLocationTrigger
-      .unwrap()
+    input.changeLocationTrigger
       .map(locationMapping)
-      .asDriverOnErrorJustComplete()
-    
-    let unknownLocation = input.changeLocationTrigger
-      .filter { $0 == nil }
-      .mapToVoid()
-      .asDriverOnErrorJustComplete()
-    let userDidNotAuthorizeLocation = input.changeAuthorizationTrigger
-      .filter { $0.status != .authorizedWhenInUse && $0.status != .authorizedAlways }
-      .mapToVoid()
-    let showDefaultLocation = Driver.merge(unknownLocation, userDidNotAuthorizeLocation)
-      .map { defaultLocation }
-      .map(locationMapping)
-      .asDriver()
-    
-    let locationChanged = Driver.merge(userLocationChanged, showDefaultLocation)
+      .drive(lastKnownLocation)
+      .disposed(by: disposeBag)
     
     let updateLocationStopped = input.stopUpdateLocationTrigger
       .mapToVoid()
       .asDriver()
     
-    return Output(loading: loading,
-                  locationChanged: locationChanged,
-                  updateLocationStopped: updateLocationStopped,
-                  errors: errors)
+    return Output(updateLocationStopped: updateLocationStopped)
   }
   
 }

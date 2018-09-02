@@ -7,9 +7,11 @@
 //
 
 import RxCocoa
+import RxSwift
 
 protocol Mapable {
   
   var region: Binder<CoordinateRegion> { get }
+  var regionDidChange: Observable<CoordinateRegion> { get }
   
 }

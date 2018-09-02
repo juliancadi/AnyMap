@@ -27,6 +27,8 @@ private extension GoogleMapsViewController {
   func setupMapView() {
     mapView = GMSMapView()
     mapView.isMyLocationEnabled = true
+    mapView.settings.rotateGestures = false
+    mapView.settings.tiltGestures = false
     view = mapView
   }
   
@@ -36,6 +38,10 @@ extension GoogleMapsViewController: Mapable {
   
   var region: Binder<CoordinateRegion> {
     return mapView.rx.regionBinder
+  }
+  
+  var regionDidChange: Observable<CoordinateRegion> {
+    return mapView.rx.regionDidChange
   }
   
 }

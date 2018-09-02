@@ -22,26 +22,4 @@ extension MapDisplayViewController: CLLocationManagerDelegate {
     }
   }
   
-  internal func bindViewModel() {
-    let userLocationChanged = self.locationManager.rx.location
-    let userAuthorizationChanged = self.locationManager.rx.didChangeAuthorization.asDriverOnErrorJustComplete()
-    let updatingLocationStopped = self.locationManager.rx.didUpdateLocations.asDriverOnErrorJustComplete()
-    let input = LocationViewModel.Input(changeLocationTrigger: userLocationChanged,
-                                        changeAuthorizationTrigger: userAuthorizationChanged,
-                                        stopUpdateLocationTrigger: updatingLocationStopped)
-    
-    let output = viewModel.transform(input: input)
-    
-    output.locationChanged
-      .debug()
-      .drive(self.mapable.region)
-      .disposed(by: disposeBag)
-    
-    output.updateLocationStopped
-      .drive(onNext: { [weak self] in
-        self?.locationManager.stopUpdatingLocation()
-      })
-      .disposed(by: disposeBag)
-  }
-
 }

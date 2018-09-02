@@ -9,6 +9,7 @@
 import MapKit
 import RxSwift
 import RxCocoa
+import RxMKMapView
 
 class MapKitViewController: UIViewController {
   
@@ -27,6 +28,8 @@ private extension MapKitViewController {
   func setupMapView() {
     mapView = MKMapView()
     mapView.showsUserLocation = true
+    mapView.isRotateEnabled = false
+    mapView.isPitchEnabled = false
     view = mapView
   }
   
@@ -36,6 +39,10 @@ extension MapKitViewController: Mapable {
   
   var region: Binder<CoordinateRegion> {
     return mapView.rx.regionBinder
+  }
+  
+  var regionDidChange: Observable<CoordinateRegion> {
+    return mapView.rx.regionDidChange
   }
   
 }
